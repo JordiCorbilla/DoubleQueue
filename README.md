@@ -24,3 +24,14 @@ Console.WriteLine(queue.Dequeue());
 Console.WriteLine(queue.DequeueLeft());
 Console.WriteLine(queue.Dequeue());
 ```
+
+## Output at cost O(1)
+
+```bash
+0
+50
+40
+30
+10
+20
+```
