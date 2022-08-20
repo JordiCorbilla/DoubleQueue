@@ -12,9 +12,11 @@
             queue.Enqueue(40);
             queue.Enqueue(50);
 
+            Console.WriteLine(queue.DequeueLeft());
             Console.WriteLine(queue.Dequeue());
             Console.WriteLine(queue.Dequeue());
             Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.DequeueLeft());
             Console.WriteLine(queue.Dequeue());
         }
     }

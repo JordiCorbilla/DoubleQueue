@@ -62,6 +62,7 @@ namespace DoubleQueue
             Size++;
         }
 
+        //Cost O(1)
         public T Dequeue()
         {
             if (Tail == null)
@@ -75,11 +76,13 @@ namespace DoubleQueue
             return item;
         }
 
+        //Cost O(1)
         public T DequeueRight()
         {
             return Dequeue();
         }
 
+        //Cost O(1)
         public T DequeueLeft()
         {
             if (Head == null)
