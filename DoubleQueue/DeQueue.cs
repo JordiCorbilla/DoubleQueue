@@ -31,6 +31,12 @@ namespace DoubleQueue
     {
         private Node<T> Head { get; set; }
         private Node<T> Tail { get; set; }
+        public int Size { get; internal set; }
+
+        public DeQueue()
+        {
+            Size = 0;
+        }
 
         public void Enqueue(T item)
         {
@@ -53,15 +59,37 @@ namespace DoubleQueue
                 Tail.Next = node;
                 Tail = node;
             }
+            Size++;
         }
 
         public T Dequeue()
         {
-            if (Head == null)
-                throw new InvalidOperationException("Queue is empty.");
+            if (Tail == null)
+                throw new InvalidOperationException("Queue is empty");
 
             T item = Tail.Value;
             Tail = Tail.Previous;
+            if (Tail is not null)
+                Tail.Next = null;
+            Size--;
+            return item;
+        }
+
+        public T DequeueRight()
+        {
+            return Dequeue();
+        }
+
+        public T DequeueLeft()
+        {
+            if (Head == null)
+                throw new InvalidOperationException("Queue is empty");
+
+            T item = Head.Value;
+            Head = Head.Next;
+            if (Head is not null)
+                Head.Previous = null;
+            Size--;
             return item;
         }
     }
