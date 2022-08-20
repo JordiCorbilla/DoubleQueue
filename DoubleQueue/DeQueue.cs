@@ -40,28 +40,18 @@ namespace DoubleQueue
             if (Head is null)
             {
                 Head = node;
-                Head.Previous = null;
-                Head.Next = null;
             }
 
             //Add the first or any other object to the tail object
             if (Tail is null)
             {
                 Tail = node;
-                Tail.Previous = null;
-                Tail.Next = null;
             }
             else
             {
-                if (Head.Next == null)
-                {
-                    Head.Next = node;
-                    node.Previous = Head;
-                }
-                var previous = Tail;
-                Tail.Next = null;
+                node.Previous = Tail;
+                Tail.Next = node;
                 Tail = node;
-                Tail.Previous = previous;
             }
         }
 
