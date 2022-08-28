@@ -83,6 +83,22 @@ namespace DoubleQueue
         }
 
         //Cost O(1)
+        public T Peek()
+        {
+            if (Tail == null)
+                throw new InvalidOperationException("Queue is empty");
+
+            T item = Tail.Value;
+            return item;
+        }
+
+        public T PeekRight()
+        {
+            return Peek();
+        }
+
+
+        //Cost O(1)
         public T DequeueLeft()
         {
             if (Head == null)
@@ -93,6 +109,16 @@ namespace DoubleQueue
             if (Head is not null)
                 Head.Previous = null;
             Size--;
+            return item;
+        }
+
+        //Cost O(1)
+        public T PeekLeft()
+        {
+            if (Head == null)
+                throw new InvalidOperationException("Queue is empty");
+
+            T item = Head.Value;
             return item;
         }
     }
