@@ -12,6 +12,8 @@
 	  <PackageTags>doublequeue</PackageTags>
 	  <FileVersion>1.1.0.0</FileVersion>
 	  <AssemblyVersion>1.1.0.0</AssemblyVersion>
+	  <PackageLicenseFile>C:\repo\DoubleQueue\LICENSE</PackageLicenseFile>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
