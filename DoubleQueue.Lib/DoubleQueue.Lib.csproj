@@ -1,26 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>disable</Nullable>
-	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <PackageProjectUrl>https://github.com/JordiCorbilla/DoubleQueue</PackageProjectUrl>
-	  <PackageReadmeFile>README.md</PackageReadmeFile>
-	  <RepositoryUrl>https://github.com/JordiCorbilla/DoubleQueue</RepositoryUrl>
-	  <RepositoryType>git</RepositoryType>
-	  <PackageTags>doublequeue</PackageTags>
-	  <FileVersion>1.1.0.0</FileVersion>
-	  <AssemblyVersion>1.1.0.0</AssemblyVersion>
-	  <PackageLicenseFile>C:\repo\DoubleQueue\LICENSE</PackageLicenseFile>
-	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>doublequeue.lib</RootNamespace>
+		<Version>1.1.0</Version>
+		<Copyright>Jordi Corbilla</Copyright>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<RepositoryUrl>https://github.com/JordiCorbilla/DoubleQueue</RepositoryUrl>
+		<PackageReleaseNotes>
+			v1.1
+			- First implementation of the double queue (not thread safe)
+		</PackageReleaseNotes>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<Description>Simple c# (.NET 6) Double Queue library that allows enqueuing/dequeueing left and right at cost O(1).</Description>
+		<AssemblyVersion>1.1.0.0</AssemblyVersion>
+		<FileVersion>1.1.0.0</FileVersion>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
