@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleQueue", "DoubleQueue.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleQueue.Lib", "..\DoubleQueue.Lib\DoubleQueue.Lib.csproj", "{C253768B-2102-4F3A-B6AB-04F229420CB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleQueue.Tests", "..\DoubleQueue.Tests\DoubleQueue.Tests.csproj", "{58E8A1C4-A71C-4EAA-A6F3-B2DE675323EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C253768B-2102-4F3A-B6AB-04F229420CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C253768B-2102-4F3A-B6AB-04F229420CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C253768B-2102-4F3A-B6AB-04F229420CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E8A1C4-A71C-4EAA-A6F3-B2DE675323EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E8A1C4-A71C-4EAA-A6F3-B2DE675323EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E8A1C4-A71C-4EAA-A6F3-B2DE675323EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E8A1C4-A71C-4EAA-A6F3-B2DE675323EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
