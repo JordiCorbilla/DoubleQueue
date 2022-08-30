@@ -40,6 +40,11 @@ namespace DoubleQueue
             Size = 0;
         }
 
+        public int Count()
+        {
+            return Size;
+        }
+
         public void Enqueue(T item)
         {
             var node = new Node<T>(item);
@@ -75,6 +80,14 @@ namespace DoubleQueue
             if (Tail is not null)
                 Tail.Next = null;
             Size--;
+
+            if (Size == 0)
+            {
+                Head.Previous = null;
+                Head.Next = null;
+                Head = null;
+
+            }
             return item;
         }
 
@@ -111,6 +124,14 @@ namespace DoubleQueue
             if (Head is not null)
                 Head.Previous = null;
             Size--;
+
+            if (Size == 0)
+            {
+                Tail.Previous = null;
+                Tail.Next = null;
+                Tail = null;
+
+            }
             return item;
         }
 

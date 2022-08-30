@@ -8,14 +8,15 @@
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<RepositoryUrl>https://github.com/JordiCorbilla/DoubleQueue</RepositoryUrl>
 		<PackageReleaseNotes>
-			v1.1
+			v1.2
 			- First implementation of the double queue (not thread safe)
+			- Fix bug when the queue is empty
 		</PackageReleaseNotes>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<Description>Simple c# (.NET 6) Double Queue library that allows enqueuing/dequeueing left and right at cost O(1).</Description>
-		<AssemblyVersion>1.1.0.0</AssemblyVersion>
-		<FileVersion>1.1.0.0</FileVersion>
+		<AssemblyVersion>1.2.0.0</AssemblyVersion>
+		<FileVersion>1.2.0.0</FileVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
